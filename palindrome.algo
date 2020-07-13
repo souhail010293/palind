@@ -1,0 +1,17 @@
+FUNCTION Palindrone (ch:STRING) : BOOLEAN
+
+BEGIN
+
+
+    IF (ch.length=1 OR ch.length=0) THEN
+
+        RETURN TRUE ;
+
+    ELSE_IF (ch[0] = ch[ch.length-1]) THEN
+        
+        Palindrone(ch.substr( 1 , ch.length-2 )) ;
+    ELSE
+        RETURN FALSE ;
+    
+    END_IF
+END
